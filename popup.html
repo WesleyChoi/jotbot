@@ -5,13 +5,18 @@
   <title>JotBot</title>
   <link rel="stylesheet" href="/css/style.css">
   <script src="screenshot.js"></script>
+  <script src="js/tesseract.min.js"></script>
 </head>
 <body>
     <h1>Here is the image you took:</h1>
     <p>
       <img id="target" src="images/white.png" height="480">
     <p>
-    <button>JotBot my Image!</button>
-    <button>Take Another</button>
+    
+    <button id="start-btn">JotBot my Image!</button>
+    <img id="image" src="images/icon.png" alt="">
+    <p id="result"/>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
