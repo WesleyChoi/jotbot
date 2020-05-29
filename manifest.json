@@ -1,8 +1,15 @@
 {
-    // Required
+    
     "manifest_version": 2,
     "name": "JotBot",
     "version": "1.0.0",
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
 
     "browser_action": {
         "default_icon": {
@@ -12,8 +19,7 @@
         },
         "default_title": "JotBot - Using Tesseract OCR to copy text from images"
       },
-
-    "default_locale": "en",
+      
     "description": "A Chrome Extension",
     "content-scripts": [
         {
@@ -21,15 +27,9 @@
         }
     ],
 
-    "browser_action": {
-        "default_icon": "icon.png"
-    },
-    "permissions": ["activeTab"],
-
-
     "background" : {
         "scripts": [
-          "dist/main.js"
+          "content.js"
         ],
         "persistent": false
       },
@@ -57,4 +57,7 @@
         "clipboardRead"
       ],
       "content_security_policy":"script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'"
+
+
+      
 }
