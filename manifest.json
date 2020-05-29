@@ -1,51 +1,22 @@
 {
-    
-    "manifest_version": 2,
-    "name": "JotBot",
-    "version": "1.0.0",
+  "name": "JotBot",
+  "version": "1.0.0",
+  "description": "A text-recognition Chrome Extension",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
 
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["content.js"]
-        }
-    ],
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Take a screen shot!"
+  },
 
-    "browser_action": {
-        "default_icon": {
-          "16" : "images/icon.png",
-          "24" : "images/icon.png",
-          "32" : "images/icon.png"
-        },
-        "default_popup": "popup.html",
-        "default_title": "JotBot - Using Tesseract OCR to copy text from images"
-      },
-
-    "description": "A text-recognition Chrome Extension",
-
-    "background" : {
-        "scripts": [
-          "content.js"
-        ],
-        "persistent": false
-    },
-    
-    "commands": {
-        "take-screenshot": {
-          "suggested_key": {
-            "default": "Alt+S"
-          },
-          "description": "Take Screenshot"
-        }
-      },
-    
-      "permissions": [
-        "storage",
-        "activeTab",
-        "clipboardWrite",
-        "clipboardRead"
-      ],
-
-      "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'"
-      
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "manifest_version": 2
 }
