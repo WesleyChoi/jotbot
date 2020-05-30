@@ -7,6 +7,4 @@ To use or try out JotBot, download the repository, then navigate towards chrome:
 
 How does JotBot work? We used Chrome's capture tab function as well as Google Tesseract's OCR (Optical Character Recognition) capabilities to be able to extract information from your browser every time you click on the extension. 
 
-Please feel free to ask questions or contact us, and thank you for visiting our project!
-
-- Wesley Choi and Kailey Chew 
+Please feel free to ask questions or contact me, and thank you for visiting my project!
