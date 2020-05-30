@@ -1,5 +1,5 @@
 const doOCR = async () => {
-  const image = document.getElementById('image');
+  // const image = document.getElementById('target');
   const result = document.getElementById('result');
 
   const { createWorker } = Tesseract;
