@@ -1,4 +1,23 @@
-body {
-    min-width:200px;
-};
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
 
+header{
+    color: white;
+    font-size: 60px;
+}
+
+button{
+    color: darkslategrey;
+    border: solid darkslategrey 2px;
+    padding: 10px 17px 10px 17px;
+    transition-duration: all ease-in-out 300ms;
+    font-size: 30px
+}
+
+#result{
+    font-size: 20px;
+}

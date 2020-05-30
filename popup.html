@@ -3,15 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>JotBot</title>
-  <link rel="stylesheet" href="/css/style.css">
+
+  <!--style-->
+
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  
+  <!--scripts-->
+
   <script src="screenshot.js"></script>
   <script src="js/tesseract.min.js"></script>
+
+  <link rel="icon" href="images/icon.png">
+
 </head>
 <body>
-    <h1>Here is the image you took:</h1>  
+    <header>JotBot</header>
+    <h1>Here is the image you took:</h1>
 
     <img id="image" height="480">
     
+    <br><br>
     <button id="start-btn">JotBot my Image!</button>
     <!-- <img id="image" src="images/123123.PNG" alt=""> -->
     <p id="result"/>
